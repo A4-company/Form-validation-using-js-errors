@@ -1,0 +1,188 @@
+/* Add a background image to the body */
+body {
+    background: url('https://imgs.search.brave.com/-GbMT_4A0B3aIHAObTi1n_gEyBrdxGn_pgawzYWEvrc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9h/YnN0cmFjdC1kaWdp/dGFsLWdyaWQtYmxh/Y2stYmFja2dyb3Vu/ZF81Mzg3Ni05NzY0/Ny5qcGc_c2l6ZT02/MjYmZXh0PWpwZw') no-repeat center center fixed; /* Replace with your image URL */
+    background-size: cover;
+    font-family: 'Arial', sans-serif; /* Apply a more modern font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the form */
+form {
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px; /* Wider width for additional fields */
+    margin: 20px auto; /* Center the form horizontally */
+    backdrop-filter: blur(8px); /* Slight blur effect for backdrop */
+    border: 1px solid #ccc; /* Light border for definition */
+    box-sizing: border-box;
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"] {
+    width: calc(100% - 24px); /* Adjust width for padding */
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+/* Style the submit button */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #28a745; /* Changed to a green color */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+button:active {
+    background-color: #1e7e34; /* Even darker green when button is pressed */
+}
+
+/* Responsive Design */
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 599px) {
+    form {
+        padding: 10px;
+        margin: 5px auto; /* Further reduced margin for very small screens */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="password"] {
+        width: calc(100% - 16px); /* Adjust width for very small screens */
+    }
+
+    button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
+
+/* Small devices (600px and up) */
+@media (min-width: 600px) and (max-width: 767px) {
+    form {
+        padding: 15px;
+        margin: 10px auto; /* Reduced margin for smaller screens */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="password"] {
+        width: calc(100% - 20px); /* Adjust width for smaller screens */
+    }
+
+    button {
+        padding: 12px;
+        font-size: 1em;
+    }
+}
+
+/* Medium devices (768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    form {
+        padding: 20px;
+        margin: 20px auto; /* Standard margin for medium screens */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="password"] {
+        width: calc(100% - 24px); /* Standard width for medium screens */
+    }
+
+    button {
+        padding: 14px;
+        font-size: 1.1em;
+    }
+}
+
+/* Large devices (992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    form {
+        padding: 25px;
+        margin: 20px auto; /* Standard margin for large screens */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="password"] {
+        width: calc(100% - 24px); /* Standard width for large screens */
+    }
+
+    button {
+        padding: 16px;
+        font-size: 1.2em;
+    }
+}
+
+/* Extra large devices (1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    form {
+        padding: 30px;
+        margin: 20px auto; /* Standard margin for extra large screens */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="password"] {
+        width: calc(100% - 24px); /* Standard width for extra large screens */
+    }
+
+    button {
+        padding: 18px;
+        font-size: 1.3em;
+    }
+}
+
+/* Extra extra large devices (1400px and up) */
+@media (min-width: 1400px) {
+    form {
+        padding: 35px;
+        margin: 20px auto; /* Standard margin for extra extra large screens */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="password"] {
+        width: calc(100% - 24px); /* Standard width for extra extra large screens */
+    }
+
+    button {
+        padding: 20px;
+        font-size: 1.4em;
+    }
+}
